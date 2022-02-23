@@ -1,0 +1,22 @@
+.headerOptions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30vw;
+    /* background-color: aqua; */
+}
+.button {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    background: none;
+    border: none;
+    color: white;
+    height: 50%;
+}
+.button:hover {
+    background-color: white;
+    cursor: pointer;
+    color: rgb(149, 221, 40);
+    border-radius: 10px;
+}
