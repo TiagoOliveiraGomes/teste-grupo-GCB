@@ -1,9 +1,14 @@
 import React from 'react'
+import BodyTop from './top'
+import BodyMiddle from './middle'
+import BodyBottom from './bottom'
 
 const Body = () => {
     return (
         <div>
-            Body Test
+            <BodyTop />
+            <BodyMiddle />
+            <BodyBottom />
         </div>
     )
 }

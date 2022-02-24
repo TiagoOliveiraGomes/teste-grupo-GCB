@@ -1,15 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './menuToggle.css'
 
-const menuToggle = () => {
-    let show = true
+const MenuToggle = () => {
+    // const show = true
+    const [show, setShow] = useState(false);
     const menuSection = document.querySelector(".menu-section")
     
     function clickMenuToggle () {
-            menuSection.classList.toggle("on", show)
-
-            document.body.style.overflow = show? "hidden": "initial"
-            show = !show
+        
+        document.body.style.overflow = show? "hidden": "initial"
+        menuSection.classList.toggle("on", show)
+        show? setShow(false) : setShow(true)
     }
     return (
         <div onClick={clickMenuToggle} className='menu-toggle'>
@@ -20,4 +21,4 @@ const menuToggle = () => {
     )
 }
 
-export default menuToggle;
+export default MenuToggle;

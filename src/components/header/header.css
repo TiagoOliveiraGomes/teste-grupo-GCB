@@ -1,6 +1,5 @@
 .header {
     height: 110vh;
-    /* background-color: tomato; */
 }
 
 .contain {
@@ -122,7 +121,6 @@
         text-align: center;
         margin-left: 0px;
         margin: 25rem 15rem 10rem;
-        /* max-width: 200px; */
         min-width: 400px;
     }
     .inputGroup {
@@ -140,13 +138,9 @@
         top: 0;
         left: 0;
 
-        /* align-items: center;
-        justify-content: center; */
-
         width: 100vw;
         height: 100vh;
 
-        /* background-color: #7159c1; */
         background-color: white;
 
         z-index: 10;
@@ -197,7 +191,6 @@
     .searchInput {
         padding: 12px 20px 12px;
         min-width: 150px;
-        /* margin-right: 5px; */
     }
     .contain_Search_Button {
         padding-top: 13px;
