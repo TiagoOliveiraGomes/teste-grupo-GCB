@@ -1,0 +1,31 @@
+.container-card {
+    display: flex;
+    box-shadow: 5px 10px 20px rgb(202, 202, 202);
+    border-radius: 5px;
+}
+
+.container-card .text-card {
+    color: rgb(0, 0, 88);
+    font-size: 4rem;
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+}
+.button-group {
+    margin-left: 5%;
+}
+
+.button-group button {
+    font-weight: bolder;
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    background-color: rgb(150, 202, 73);
+    border: none;
+    color: white;
+    /* height: 50%; */
+    letter-spacing: 1px;
+    font-size: 1.4rem;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
