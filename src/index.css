@@ -18,3 +18,8 @@ body, html{
   }
 }
 
+@media (max-width: 400px) {
+  html {
+    font-size: 40%;
+  }
+}

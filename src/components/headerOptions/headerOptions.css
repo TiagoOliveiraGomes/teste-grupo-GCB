@@ -32,3 +32,9 @@
         background-color: rgb(149, 221, 40);
     }
 }
+
+@media (max-width: 700px) {
+    .headerOptions {
+        display: none;
+    }
+}

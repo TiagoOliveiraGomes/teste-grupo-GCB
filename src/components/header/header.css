@@ -137,3 +137,19 @@
         margin-left: 0;
     }
 }
+
+@media (max-width: 400px) {
+    .inputQuestion {
+        min-width: 300px;
+    }
+    .searchInput {
+        padding: 12px 20px 12px;
+        min-width: 150px;
+        /* margin-right: 5px; */
+    }
+    .contain_Search_Button {
+        padding-top: 13px;
+        padding-bottom: 13px;
+        margin: 0 5px 0;
+    }
+}

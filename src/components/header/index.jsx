@@ -5,6 +5,7 @@ import Tittle from '../tittle'
 import HeaderOptions from '../headerOptions'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import MenuToggle from '../menuToggle'
 
 const Header = () => {
     return (
@@ -12,6 +13,7 @@ const Header = () => {
             <div className='contain'>
                 <div className='topContain'>
                     <Tittle tittle="Healthy Food"/>
+                    <MenuToggle />
                     <HeaderOptions />
                 </div>
                 <div className='containInput'>
