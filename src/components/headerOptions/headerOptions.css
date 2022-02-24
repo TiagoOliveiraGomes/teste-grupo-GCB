@@ -1,8 +1,8 @@
 .headerOptions {
     display: flex;
-    align-self: flex-end;
-    justify-content: space-between;
-    align-items: center;
+    /* align-self: flex-end; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
 }
 .button {
     font-weight: bolder;
@@ -15,6 +15,7 @@
     height: 50%;
     letter-spacing: 1px;
     font-size: 1.4rem;
+    justify-content: center;
 }
 .button:hover {
     background-color: white;

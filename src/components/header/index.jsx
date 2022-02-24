@@ -13,8 +13,10 @@ const Header = () => {
             <div className='contain'>
                 <div className='topContain'>
                     <Tittle tittle="Healthy Food"/>
-                    <MenuToggle />
-                    <HeaderOptions />
+                    <div className='menu-section on'>
+                        <MenuToggle />
+                        <HeaderOptions />
+                    </div>
                 </div>
                 <div className='containInput'>
                     <div className='inputGroup' >
