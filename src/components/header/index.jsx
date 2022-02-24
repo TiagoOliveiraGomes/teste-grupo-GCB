@@ -15,16 +15,20 @@ const Header = () => {
                     <HeaderOptions />
                 </div>
                 <div className='containInput'>
-                    <h1 className='inputQuestion'>Ready for Trying a new recipe?</h1>
-                    <div className='inputGroup'>
-                        <input className='searchInput' placeholder='Search healthy recipes' type="text" />
-                        <button className='contain_Search_Button'>
-                            <FontAwesomeIcon className='search_Button' icon={faSearch} />
-                        </button>
+                    <div className='inputGroup' >
+                        <h1 className='inputQuestion'>Ready for Trying a new recipe?</h1>
+                        <div>
+                            <input className='searchInput' placeholder='Search healthy recipes' type="text" />
+                            <button className='contain_Search_Button'>
+                                <FontAwesomeIcon className='search_Button' icon={faSearch} />
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <img className='img' src={background} />
+            <div className='ContainImg'>
+                <img className='img' src={background} />
+            </div>
         </div>
     )
 }

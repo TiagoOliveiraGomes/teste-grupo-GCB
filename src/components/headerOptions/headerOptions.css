@@ -3,8 +3,6 @@
     align-self: flex-end;
     justify-content: space-between;
     align-items: center;
-    /* width: 35vw; */
-    /* background-color: aqua; */
 }
 .button {
     font-weight: bolder;
@@ -16,11 +14,21 @@
     color: white;
     height: 50%;
     letter-spacing: 1px;
-    font-size: 1rem;
+    font-size: 1.4rem;
 }
 .button:hover {
     background-color: white;
     cursor: pointer;
     color: rgb(149, 221, 40);
     border-radius: 5px;
+}
+
+@media (max-width: 820px) {
+    .button {
+        color: rgb(149, 221, 40);
+    }
+    .button:hover {
+        color: white;
+        background-color: rgb(149, 221, 40);
+    }
 }
