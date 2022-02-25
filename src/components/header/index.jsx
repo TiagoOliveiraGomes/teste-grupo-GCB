@@ -13,7 +13,7 @@ const Header = () => {
             <div className='contain'>
                 <div className='topContain'>
                     <Tittle tittle="Healthy Food"/>
-                    <div className='menu-section on'>
+                    <div className='menu-section'>
                         <MenuToggle />
                         <HeaderOptions />
                     </div>
