@@ -27,3 +27,7 @@
     height: 500px;
 
 }
+
+.body-Bottom .container-card{
+    display: block;
+}
