@@ -7,7 +7,7 @@ const card = (props) => {
             <img className="img-card" src={props.source}/>
             <div className="button-group">
                 <div className="text-card">{props.text}</div>
-                <button>See Recipe</button>
+                {props.element}
             </div>
         </div>
     )

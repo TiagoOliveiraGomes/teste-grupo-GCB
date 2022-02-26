@@ -9,10 +9,10 @@ import pie from '../../assets/img/comida_4.svg'
 const grid = () => {
     return (
         <section className='grid'>
-            <Card source={brocolli} text="Broccoli Salad with Bacon"/>
-            <Card source={burger} text="Classic Beef Burguers"/>
-            <Card source={salad} text="Classic Potato Salad"/>
-            <Card source={pie} text="Cherry Cobbler on the Grill"/>
+            <Card source={brocolli} text="Broccoli Salad with Bacon" element={<button>See Recipe</button>}/>
+            <Card source={burger} text="Classic Beef Burguers" element={<button>See Recipe</button>}/>
+            <Card source={salad} text="Classic Potato Salad" element={<button>See Recipe</button>}/>
+            <Card source={pie} text="Cherry Cobbler on the Grill" element={<button>See Recipe</button>}/>
         </section>
     )
 }

@@ -69,6 +69,12 @@
     }
 }
 
+@media (max-width: 700px) {
+    .container .initial-texts .text {
+        margin: 20px 10vh;
+    }
+}
+
 @media (max-width: 655px) {
     .group-text {
         margin: 0 15% 0;
