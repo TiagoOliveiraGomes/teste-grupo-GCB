@@ -3,11 +3,13 @@ import './header.css'
 import background from '../../assets/img/Illustration.svg'
 import Tittle from '../tittle'
 import HeaderOptions from '../headerOptions'
+import MenuToggle from '../menuToggle'
+import InputGroup from '../inputGroup'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
-import MenuToggle from '../menuToggle'
 
 const Header = () => {
+    const SearchButton = <FontAwesomeIcon className="search_Button" icon={faSearch} />
     return (
         <div className='header'>
             <div className='contain'>
@@ -19,15 +21,7 @@ const Header = () => {
                     </div>
                 </div>
                 <div className='containInput'>
-                    <div className='inputGroup' >
-                        <h1 className='inputQuestion'>Ready for Trying a new recipe?</h1>
-                        <div>
-                            <input className='searchInput' placeholder='Search healthy recipes' type="text" />
-                            <button className='contain_Search_Button'>
-                                <FontAwesomeIcon className='search_Button' icon={faSearch} />
-                            </button>
-                        </div>
-                    </div>
+                    <InputGroup placeholder="Search healthy recipes" text="Ready for Trying a new recipe?" button={SearchButton} />
                 </div>
             </div>
             <div className='ContainImg'>
