@@ -16,6 +16,7 @@
     letter-spacing: 1px;
     font-size: 1.4rem;
     justify-content: center;
+    text-decoration: none;
 }
 .button:hover {
     background-color: white;

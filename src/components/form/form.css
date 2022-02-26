@@ -1,0 +1,36 @@
+.container-form{
+    box-shadow: 5px 5px 20px rgb(219, 219, 219);
+    width: 400px; height: 600px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.container-form button {
+    margin: 5% 45%;
+    background-color:  rgb(150, 202, 73);
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    font-size: 1.7rem;
+}
+
+.container-form button:hover {
+    background-color:  rgb(127, 170, 62);
+}
+
+.flex {
+    display: flex;
+    align-items: flex-end;
+}
+
+.aux-tittle-BirthDate {
+    padding: 0 20px;
+    margin-bottom: 0;
+    margin-top: 20px;
+    color: rgb(0, 0, 88);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.5rem;
+}
