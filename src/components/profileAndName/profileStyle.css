@@ -5,6 +5,7 @@
     /* justify-content: center; */
     align-self: flex-end;
     margin-bottom: 5%;
+    margin-top: 10px;
 }
 .profile-and-name img{
     width: 50px; height: 50px;
@@ -19,3 +20,9 @@
     font-family: 'Red Hat Display', sans-serif;
 }
 
+@media (max-width: 1031px) {
+    .profile-and-name img {
+        width: 40px; height: 40px;
+        margin: 0 10px;
+    }
+}

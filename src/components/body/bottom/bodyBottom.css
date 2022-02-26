@@ -1,7 +1,7 @@
 .body-Bottom {
     background-color: rgb(248, 248, 248);
     padding-top: 3rem;
-    padding-bottom: 50rem;
+    padding-bottom: 5vh;
     overflow: hidden;
 }
 .body-Bottom .initial-texts .tittle {
@@ -27,6 +27,8 @@
     width: 100%;
     height: 55rem;
     margin-top: 5vh;
+    overflow: hidden;
+    /* background-color: blueviolet; */
 }
 
 .carosel{
@@ -37,7 +39,7 @@
 
 .body-Bottom .container-card{
     display: block;
-    height: 55rem;
+    height: 50rem;
     width: 20vw;
     background-color: white;
 }
@@ -68,6 +70,9 @@
     .body-Bottom .container-card {
         padding-bottom: 2vh;
     }
+    .body-Bottom .button-group {
+        height: 48%;
+    }
 }
 
 @media (max-width: 1143px) {
@@ -78,7 +83,10 @@
 
 @media (max-width: 1130px) {
     .body-Bottom .button-group {
-        height: 45%;
+        height: 43%;
+    }
+    .body-Bottom .text-card {
+        font-size: 2.5rem;
     }
 }
 
@@ -89,10 +97,13 @@
     }
     .body-Bottom .container-card {
         width: 90%;
-        height: 43vh;
+        height: 60vh;
     }
     .body-Bottom .text-card {
         font-size: 2.5rem;
+    }
+    .body-Bottom .test-square {
+        height: 65rem;
     }
 }
 
@@ -101,20 +112,29 @@
         height: 45rem;
     }
     .body-Bottom .button-group {
-        height: 50%;
+        height: 55%;
     }
 }
 
 @media (max-width: 511px) {
     .body-Bottom .container-card {
-        height: 60rem;
+        height: 50rem;
     }
     .body-Bottom .button-group {
-        height: 40%;
+        height: 28%;
     }
 }
 
 @media (max-width: 376px) {
+    .body-Bottom .container-card {
+        height: 50rem;
+    }
+    .body-Bottom .button-group {
+        height: 35%;
+    }
+}
+
+@media (max-width: 336px) {
     .body-Bottom .container-card {
         height: 50rem;
     }
