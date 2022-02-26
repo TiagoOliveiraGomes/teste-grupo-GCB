@@ -1,3 +1,77 @@
 .footer {
+    
+}
+
+.footer-block {
     display: flex;
+    align-items: center;
+}
+.bottom-group {
+    display: flex;
+    margin-top: 4vh;
+    padding: 1vh 10%;
+    justify-content: space-between;
+}
+
+.bottom-group h3 {
+    color: rgb(0, 0, 88);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.8rem;
+}
+
+.footer-block .inputQuestion {
+    margin: 30px 0px;
+    font-size: 3.3rem;
+}
+.footer-block .inputGroup {
+    margin: 0 10%;
+}
+
+@media (max-width: 1300px) {
+    .footer-block .inputGroup {
+        margin: 0 5%;
+    }
+}
+@media (max-width: 1232px) {
+    .footer-block .inputGroup {
+        margin: 0 2%;
+    }
+}
+
+@media (max-width: 1130px) {
+    .footer-block img {
+        width: 500px; height: 800px;
+    }
+}
+
+@media ( max-width: 896px) {
+    .footer-block img {
+        display: none;
+    }
+    .footer-block .inputGroup {
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-block .inputQuestion {
+        text-align: center;
+    }
+}
+
+@media (max-width: 820px) {
+    .bottom-group {
+        padding: 1vh 5%;
+    }
+}
+
+@media(max-width: 700px) {
+    .bottom-group {
+        display: block;
+    }
+    .bottom-group h3{
+        text-align: center;
+    }
+
+    .bottom-group .footerOptions{
+        justify-content: center;
+    }
 }
