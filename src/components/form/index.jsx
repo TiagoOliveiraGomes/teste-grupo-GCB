@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './form.css'
+import Cookies from 'universal-cookie'
 import InputForm from './inputForm'
 import DateOfBirth from './dateOfBirth'
 // import {consultarCep} from 'correios-brasil'
@@ -17,6 +18,7 @@ const Form = () => {
     const [focusOut, setFocusOut] = useState(false)
     const [cepError, setCepError] = useState(true)
     const [disabled, setDisabled] = useState(false)
+    const cookies = new Cookies();
 
     useEffect(()=> {
         async function getLocation () {
@@ -37,13 +39,7 @@ const Form = () => {
     }, [focusOut])
 
     function pressRegisterButton () {
-        if(!name)return alert("Nome inválido!")
-        if(!cpf)return alert("cpf inválido!")
-        if(+day > 32 || !day)return alert("dia inválido!")
-        if(+month > 32 || !month)return alert("mês inválido!")
-        if(!year)return alert("ano inválido!")
-        if(`${cep}`.length < 8 || !cep)return alert("Cep inválido!")
-        localStorage.setItem("DataUser", JSON.stringify({
+        const objectUserData = {
             name: name,
             cpf:cpf,
             birthDate: `${day}/${month}/${year}`,
@@ -51,7 +47,15 @@ const Form = () => {
             street: street,
             city: city,
             state: state,
-        }))
+        }
+        if(!name)return alert("Nome inválido!")
+        if(!cpf)return alert("cpf inválido!")
+        if(+day > 32 || !day)return alert("dia inválido!")
+        if(+month > 32 || !month)return alert("mês inválido!")
+        if(!year)return alert("ano inválido!")
+        if(`${cep}`.length < 8 || !cep)return alert("Cep inválido!")
+        localStorage.setItem("DataUser", JSON.stringify(objectUserData))
+        cookies.set("DataUser", JSON.stringify(objectUserData))
         alert("Usuario Registrado!")
     }
     
