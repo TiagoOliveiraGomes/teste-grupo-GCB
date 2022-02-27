@@ -1,8 +1,5 @@
 .headerOptions {
     display: flex;
-    /* align-self: flex-end; */
-    /* justify-content: space-between; */
-    /* align-items: center; */
 }
 .button {
     font-weight: bolder;

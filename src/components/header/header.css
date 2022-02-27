@@ -6,6 +6,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    justify-content: center;
 }
 
 .topContain {
@@ -163,8 +164,8 @@
     }
     .menu-section.on .menu-toggle {
         position: absolute;
-        right: 25px;
-        top: 20px;
+        right: 45px;
+        top: 48px;
     }
     .menu-section.on .menu-toggle .one {
         transform: rotate(45deg) translate(7px, 7px);

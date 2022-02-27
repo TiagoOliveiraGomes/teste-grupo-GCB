@@ -5,10 +5,10 @@
         height: 4px;
         width: 100%;
         margin: 6px auto;
-
         transition-duration: 0.3s;
     }
     .menu-toggle {
+        cursor: pointer;
         width: 35px;
         height: 30px;
         margin-right: 20px;
