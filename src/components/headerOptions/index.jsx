@@ -4,12 +4,14 @@ import './headerOptions.css'
 
 const HeaderOptions = () => {
     return (
-        <div className='headerOptions'>
-            <Link to="/" className='button'>HEALTHY RECIPES</Link>
-            <Link to="/" className='button'>BLOG</Link>
-            <Link to="/" className='button'>JOIN</Link>
-            <Link to="/register" className='button'>REGISTER</Link>
-        </div>
+        <nav className='headerOptions'>
+            <ul>
+                <Link to="/" className='button'>HEALTHY RECIPES</Link>
+                <Link to="/" className='button'>BLOG</Link>
+                <Link to="/" className='button'>JOIN</Link>
+                <Link to="/register" className='button'>REGISTER</Link>
+            </ul>
+        </nav>
     )
 }
 

@@ -1,6 +1,10 @@
 .headerOptions {
     display: flex;
 }
+
+nav ul {
+    display: flex;
+}
 .button {
     font-weight: bolder;
     display: flex;

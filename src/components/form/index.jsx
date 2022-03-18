@@ -23,6 +23,7 @@ const Form = () => {
     useEffect(()=> {
         async function getLocation () {
             const url = `https://viacep.com.br/ws/${cep}/json/`
+            if(!url) return
             const response = await fetch(url)
             response && setCepError(false)
             const data = await response.json()
